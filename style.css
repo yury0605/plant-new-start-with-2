@@ -347,6 +347,12 @@ border: 1px solid #E3E1D5;
   }
   /* Service styles finish */
   /* Prices styles start */
+  .gardeners{
+    display: flex;
+    flex-direction: column;
+    width: 452px;
+  }
+  
   .general_prices{
     display: flex;
     flex-wrap: wrap;
@@ -376,7 +382,61 @@ border: 1px solid #E3E1D5;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
   }
+  .tab_prices{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background: #EDF2EC;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 32px;
+    }
+  .prices_title span{
+    color: #499A18;
+  }
+  .gardeners>.prices_title{
+    text-align: right;
+  }
 
+
+
+  .contact_us_gardeners_button{
+    width: 162px;
+    height: 50px;
+    padding: 10px 27px;
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;      
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background: transparent;
+    margin-right: 0px;
+    transition: 0.5s;
+  }
+  .contact_us_gardeners_button:hover, .contact_us_gardeners_button:active{
+    color: #eea35d;
+    border: 1px solid #eea35d;
+  }
+  .img_prices{
+    width: 152px;
+    height: 175px;
+    display: flex;
+    justify-content: end;
+  }
+  .img_prices_gardeners{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+  }
+  .contact_us_gardeners{
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+  }
   /*start input label*/
   .question-input {
     display: none;
@@ -399,66 +459,9 @@ border: 1px solid #E3E1D5;
     height: auto;
     padding: 10px 0;
   }
-  .tab_prices{
-    display: flex;
-    width: 250px;
-    height: 50px;
-    background: #EDF2EC;
-    border-radius: 20px;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 32px;
-    }
+  
     /*finish input label*/
 
-    .gardeners{
-      display: flex;
-      flex-direction: column;
-      width: 452px;
-      
-    }
-    .prices_title span{
-      color: #499A18;
-    }
-    .gardeners>.prices_title{
-      text-align: right;
-    }
-    .contact_us_gardeners_button{
-      width: 162px;
-      height: 50px;
-      padding: 10px 27px;
-      font-family: 'Inika';
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 26px;
-      text-align: center;
-      color: #E06733;      
-      border: 1px solid #E06733;
-      border-radius: 5px;
-      background: transparent;
-      margin-right: 0px;
-      transition: 0.5s;
-    }
-    .contact_us_gardeners_button:hover, .contact_us_gardeners_button:active{
-      color: #eea35d;
-      border: 1px solid #eea35d;
-    }
-    .img_prices{
-      width: 152px;
-      height: 175px;
-      display: flex;
-      justify-content: end;
-    }
-    .img_prices_gardeners{
-      display: flex;
-      justify-content: end;
-      margin-top: 40px;
-    }
-    .contact_us_gardeners{
-      display: flex;
-      justify-content: end;
-      margin-top: 0px;
-    }
     /* Prices styles finish*/
     /* Contact us styles start*/
     .contact_us{
@@ -559,7 +562,7 @@ word-spacing: 10px;
   margin-right: 15px;
 }
 /* Footer styles finish*/
-/* Media styles start*/
+/* Media styles 768px start*/
 @media screen and (max-width: 768px) {
 .header_burger {
   display: block;
@@ -754,20 +757,94 @@ margin-right: auto;
 }
 }
 
-/* Media styles finish*/
-
-/* .rolling_scopes{
-  padding: 0;
-  height: 30px;
-  margin-top: -30%;
+/* Media styles 768px finish*/
+/* Media styles 380px start*/
+@media screen and (max-width: 380px) {
+body{
+  width: 380px;
 }
-.rolling_scopes>.text_footer{
-  
-}
+.title_about_us{
+  font-size: 25px;
+  line-height: 33px;
+  width: auto;
 
-.license{
-  height: 30px;
-  margin-top: -40%;
+ }
+ .subtitle_about_us {
+  font-size: 15px;
+  line-height: 25px;
+  width: auto;
 }
-
-*/
+.title_service{
+  width: 187px;
+  font-size: 25px;
+  line-height: 33px;
+}
+.service_item {
+  width: 121px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  margin-right: 10px;
+}
+.service_item:last-child{
+  margin-top: 9px;
+}
+.service_list {
+flex-wrap: wrap;
+}
+.general_prices{
+  flex-direction: column;
+  min-height: auto;
+}
+.gardeners{
+  width: auto;
+  margin: 0;
+}
+.img_prices{
+display: none;
+}
+.prices_title{
+font-size: 20px;
+line-height: 35px;
+}
+.gardeners>.prices_title{
+  text-align: center;
+}
+.contact_us_gardeners{
+  justify-content: center;
+}
+.prices_title_left{
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+}
+.contact_us_gardeners_button{
+  width: 121px;
+  height: 35px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 5px;
+}
+.tab_prices{
+  width: 180px;
+  height: 50px;
+  margin-bottom: 14px;
+}
+.question-label{
+  font-size: 15px;
+}
+.accourdion_prices{
+  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.title_contact_us{
+  font-size: 25px;
+  line-height: 33px;
+  }
+  .tab_contact_us{
+    width: 300px;
+    height: 50px;
+  }
+}
+/* Media styles 380px finish*/
