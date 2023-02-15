@@ -100,42 +100,42 @@
                             <li class="service_item">
                                 <a href="#!" class="service_link">Gardens</a>
                             </li>
-                            <li class="service_item">
-                                <a href="#!" class="service_link">Lawn</a>
+                            <li class="service_item2">
+                                <a href="#!" class="service_link2">Lawn</a>
                             </li>
-                            <li class="service_item">
-                                <a href="#!" class="service_link">Planting</a>
+                            <li class="service_item3">
+                                <a href="#!" class="service_link3">Planting</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="cards_service">
-                    <div class="garden_care1">
+                    <div class="garden_care">
                         <img src="./img/first.png" alt="Garden care" class="img_service">
                         <h3 class="subtitle_service">Garden Care</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="garden_care1">
+                    <div class="planting">
                         <img src="./img/lemon.png" alt="Lemon" class="img_service">
                         <h3 class="subtitle_service">Planting</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="garden_care1">
+                    <div class="lawn_care">
                         <img src="./img/watering.png" alt="watering" class="img_service">
                         <h3 class="subtitle_service">Lawn care</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="garden_care1">
+                    <div class="planting">
                         <img src="./img/planting.png" alt="planting" class="img_service">
                         <h3 class="subtitle_service">Planting</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="garden_care1">
+                    <div class="garden_care">
                         <img src="./img/flower_pot.png" alt="Flowe pot" class="img_service">
                         <h3 class="subtitle_service">Garden care</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="garden_care2">
+                    <div class="planting">
                         <img src="./img/cactus.png" alt="cactus" class="img_service">
                         <h3 class="subtitle_service">Planting</h3>
                         <p>Lorem Ipsum has been the industry</p>
@@ -150,33 +150,39 @@
 
                     <div class="prices_prices">
                         <h2 class="prices_title_left">Prices</h2>
-                        <div class="accourdion_prices">
 
-                                <div class="tab_prices"> 
-                                <div class="basics_tab_prices"><input class="question-input" id="question" type="checkbox">
-                                <label class="question-label" for="question">Basics</label>
-                                <div class="answer">empty yet</div>
-                                    </div>
-                                    <img src="./img/accordion_btn.png" alt="button">
-                                </div>	   
-                                
-                                <div class="tab_prices"> 
-                                    <div class="basics_tab_prices"><input class="question-input" id="question2" type="checkbox">
-                                    <label class="question-label" for="question">Standart</label>
-                                        <div class="answer">empty yet</div>
-                                        </div>
-                                        <img src="./img/accordion_btn.png" alt="button">
-                                    </div>	   
-                                
-                                    <div class="tab_prices"> 
-                                        <div class="basics_tab_prices"><input class="question-input" id="question3" type="checkbox">
-                                        <label class="question-label" for="question">Pro care</label>
-                                            <div class="answer">empty yet</div>
-                                            </div>
-                                            <img src="./img/accordion_btn.png" alt="button">
-                                        </div>	
+                        <!-- accordeon starts -->
+                        <div class="accordeonPrices">
+
+                            <div class="tabPrices">Basics
+                              <img src="./img/accordion_btn.png" alt="button" class="tabPricesLogo">
+                            </div>
+                            <div class="tabPricesDrop">
+                              <p class="tabText">Release of Letraset sheets <br> containing Lorem Ipsum passages,<br> and more recently</p>
+                              <p class="tabTextPriceAll"><span class="tabTextPrice">$15</span> / per hour</p>
+                              <button class="tabButton"><a href="#contacts__link" class="">Order</a></button>
+                            </div>
+
+                            <div class="tabPrices">Standart
+                                <img src="./img/accordion_btn.png" alt="button" class="tabPricesLogo">
+                              </div>
+                              <div class="tabPricesDrop">
+                                <p class="tabText">Release of Letraset sheets <br> containing Lorem Ipsum passages,<br> and more recently</p>
+                                <p><span class="tabTextPrice">$25</span> / per hour</p>
+                                <button class="tabButton"><a href="#contacts__link" class="">Order</a></button>
+                              </div>
+
+                              <div class="tabPrices">Pro Care
+                                <img src="./img/accordion_btn.png" alt="button" class="tabPricesLogo">
+                              </div>
+                              <div class="tabPricesDrop">
+                                <p class="tabText">Release of Letraset sheets <br> containing Lorem Ipsum passages,<br> and more recently</p>
+                                <p><span class="tabTextPrice">$35</span> / per hour</p>
+                                <button class="tabButton"><a href="#contacts__link" class="">Order</a></button>
+                              </div>
+                            
+                          </div>    
                         </div>
-                    </div>
                 <div class="gardeners">
                     <h2 class="prices_title">Our best <span>gardeners</span> are ready to help you</h2>
                   <div class="contact_us_gardeners">  <button type="submit" class="contact_us_gardeners_button">
@@ -195,14 +201,20 @@
                     <img src="./img/contact_woman.png" alt="Woman with flowers" class="img_contact_us">
                     <h2 class="title_contact_us">Contact us</h2>
 
-                    <div class="right_div_contact_us"> 
-                         <div class="tab_contact_us"><input class="contact_us_input" id="id_contact_us" type="checkbox">
-                            <label class="contact_us_label" for="id_contact_us">City</label>
-                            <div class="answer_contact_us">empty yet</div>
+                    <div class="right_div_contact_us">
+                       <div class="tab_contact_us">
+                            <span>City</span>
                             <img src="./img/accordion_btn_contact.png" class="button_contacts_us" alt="Button">
                         </div>
-                        
-                        </div>	
+                        <div class="container">
+                            <div class="select-body">
+                                <div class="select-item">Canandaigua, NY</div>
+                                <div class="select-item">New York City</div>
+                                <div class="select-item">Yonkers, NY</div>
+                                <div class="select-item">Sherrill, NY</div>
+                            </div>
+                        </div>
+                     </div>	
                 </div>
             
             </div>
