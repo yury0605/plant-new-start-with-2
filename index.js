@@ -157,3 +157,41 @@ selectItems.forEach(item => {
   });
 });
 
+//contact us
+
+
+const selectorContUs = document.querySelector('.select');
+const contactInfoBlock = document.querySelector('.contact_info');
+const contactInfoBlockNy = document.querySelector('.contact_info_ny');
+const contactInfoBlockYon = document.querySelector('.contact_info_yon');
+const contactInfoBlockSher = document.querySelector('.contact_info_sher');
+
+selectorContUs.onchange = function() {
+    let item = this.value;
+ if (item === '111'){
+  contactInfoBlock.classList.add('active_info');
+  contactInfoBlockNy.classList.remove('active_info');
+  contactInfoBlockYon.classList.remove('active_info');
+  contactInfoBlockSher.classList.remove('active_info');
+ }
+ if (item === '222'){
+  contactInfoBlockNy.classList.add('active_info'); 
+  contactInfoBlock.classList.remove('active_info');
+  contactInfoBlockYon.classList.remove('active_info');
+  contactInfoBlockSher.classList.remove('active_info');
+ }
+ if (item === '333'){
+  contactInfoBlockYon.classList.add('active_info'); 
+  contactInfoBlock.classList.remove('active_info');
+  contactInfoBlockNy.classList.remove('active_info');
+  contactInfoBlockSher.classList.remove('active_info');
+ }
+ if (item === '444'){
+  contactInfoBlockSher.classList.add('active_info'); 
+  contactInfoBlockNy.classList.remove('active_info');
+  contactInfoBlockYon.classList.remove('active_info');
+  contactInfoBlock.classList.remove('active_info');
+ }
+}
+  
+
